@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //1//
+       let Jeruk = prompt("Masukan Satuan Kg Jeruk Yang Ingin Anda Beli ")
+       let HargaJeruk = Jeruk * 5000
+       let Diskon = 5/100 * HargaJeruk
+       let HargaDiskon = HargaJeruk - Diskon
+
+    console.log(`Aku Membeli Sebanyak ${Jeruk} Kg Harganya Adalah ${HargaJeruk}, Aku Mendapat Diskon Sebesar ${Diskon} Rupiah,Jadi Harga Yang Harus Aku Bayar ${HargaDiskon} Rupiah `);
+
+   //2//      
+    let inputBilangan = prompt("Masukkan bilangan bulat:");
+
+let bilangan = parseInt(inputBilangan);
+
+let satuan = bilangan % 10
+let puluhan = Math.floor((bilangan % 100) / 10)
+let ratusan = Math.floor((bilangan / 100) % 10)
+
+console.log(`Angka Satuan, Puluhan, dan Ratusan dari ${inputBilangan} Angka satuan = ${satuan}, Angka puluhan = ${puluhan}, Angka ratusan = ${ratusan}`)
+
+//3//
+let fahrenheit = prompt("Masukan Tinggi Tenperatur dalam satuan fahrenheit")
+let Celcius = (fahrenheit - 32) * 5/9
+if(Celcius < 250){
+    Kondisi = "Dingin"
+}else if( Celcius >= 250 && Celcius < 300){
+    Kondisi = "Normal"
+}else {
+    Kondisi = "Panas"
+}
+
+console.log(`Tinggi Temperatur Adalah ${Celcius}C Kondisi Sekarang Tergolong ${Kondisi}`)
+document.write(`Tinggi Temperatur Adalah ${Celcius}C Kondisi Sekarang Tergolong ${Kondisi}`)
+    </script>
+</body>
+</html>

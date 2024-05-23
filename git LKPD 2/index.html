@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+//1//
+let Nama = prompt("masukan nama anda")
+let GajiPokok = parseFloat (prompt("masukan gaji pokok anda"))
+let Tunj = 20/100 * GajiPokok
+let Pjk = 15/100 * (GajiPokok + Tunj)
+let GajiBersih = (GajiPokok + Tunj - Pjk)
+
+
+console.log(`Namaku adalah ${Nama},gaji pokok ku sebesar ${GajiPokok}, tunjanganku sebesar ${Tunj}, pajakku sebesar ${Pjk}, Aku memiliki gaji bersih sebesar ${GajiBersih}`)
+
+
+//2//'
+let WaktuJam = parseFloat(prompt("Masukan Satuan Jam"))
+let WaktuMenit = parseFloat(prompt("Masukan Satuan Menit"))
+let WaktuDetik = parseFloat(prompt("Masukan Satuan Detik"))
+let J = WaktuJam * 60 * 60        
+let M = WaktuMenit * 60
+let D = WaktuDetik
+let TotalDetik = J + M + D
+
+console.log(`Totalnya Ada ${TotalDetik} Detik`)
+
+//3//
+let Detik = parseFloat(prompt("Masukan Satuan Detik"))
+let Jam =  Math.floor(Detik/3600)
+let hsljam = Jam * 3600
+let Menit = Math.floor((Detik - hsljam)/60)
+let hslmenit = Menit * 60
+let                  SisaDetik = Detik -  hsljam - hslmenit
+
+console.log(`Hasilnya ${Jam} Jam ${Menit} Menit ${SisaDetik} Detik`)
+
+    </script>
+    
+</body>
+</html>
